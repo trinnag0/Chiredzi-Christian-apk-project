@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#183a66">
+  <title>Chiredzi Christian School Welfare</title>
+  <style>
+    :root{--navy:#183a66;--gold:#d6a44a;--paper:#f7f8fb}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:#172033;background:var(--paper)}
+    header{min-height:560px;display:grid;align-items:center;background:linear-gradient(120deg,rgba(24,58,102,.96),rgba(24,58,102,.74)),linear-gradient(135deg,#2a5e91,#d6a44a);color:white}
+    main{width:min(1120px,calc(100% - 32px));margin:auto;padding:72px 0}
+    .hero{width:min(1120px,calc(100% - 32px));margin:auto}
+    .eyebrow{text-transform:uppercase;letter-spacing:2px;font-weight:800;color:#f2d99d}
+    h1{max-width:760px;margin:18px 0 14px;font-size:clamp(44px,8vw,74px);line-height:.98;letter-spacing:-3px}
+    .hero p{max-width:650px;font-size:18px;color:#edf3fa}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+    .button{display:inline-block;border-radius:10px;padding:13px 18px;color:var(--navy);background:white;text-decoration:none;font-weight:800}
+    .button.gold{background:var(--gold);color:#172033}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+    .card{background:white;border:1px solid #dde3ec;border-radius:16px;padding:22px;box-shadow:0 10px 30px rgba(24,58,102,.06)}
+    .card h2{margin-top:0;color:var(--navy)}
+    footer{padding:24px;text-align:center;background:#102944;color:white}
+    @media(max-width:700px){header{min-height:520px}.grid{grid-template-columns:1fr}h1{letter-spacing:-2px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <span class="eyebrow">Chiredzi Christian School</span>
+      <h1>Student Welfare, in one place.</h1>
+      <p>Attendance, announcements, academic support and school administration for students, parents, teachers and leaders.</p>
+      <div class="actions">
+        <a class="button gold" href="https://github.com/trinnag0/Chiredzi-Christian-apk-project">View source on GitHub</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <span class="eyebrow" style="color:#9a741f">School portal</span>
+    <h2 style="font-size:42px;margin:8px 0 10px">Built for the whole school community</h2>
+    <div class="grid">
+      <article class="card"><h2>Attendance</h2><p>Track and review student attendance across classes and terms.</p></article>
+      <article class="card"><h2>Communication</h2><p>Send broadcasts and keep parents and staff informed.</p></article>
+      <article class="card"><h2>Administration</h2><p>Manage students, projects, finance and academic records.</p></article>
+    </div>
+  </main>
+  <footer>&copy; <span id="year"></span> Chiredzi Christian School Welfare</footer>
+  <script>document.getElementById("year").textContent=new Date().getFullYear()</script>
+</body>
+</html>
